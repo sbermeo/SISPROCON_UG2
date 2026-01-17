@@ -160,3 +160,27 @@ Autenticacion
 - El sistema usa sesion PHP (`$_SESSION`) para mantener el usuario autenticado.
 - Las rutas publicas estan definidas en `public/index.php`.
 
+Informe tecnico de entrega
+--------------------------
+Alcance del modulo
+- Captura y gestion de propuestas mediante formularios (1 al 7).
+- Autenticacion de usuarios y control de acceso por sesion.
+- Integracion con APIs externas para autenticacion y consulta de datos.
+- Persistencia mediante procedimientos almacenados en SQL Server via API.
+
+Funcionalidades implementadas
+- Login/logout y proteccion de rutas.
+- Renderizado de vistas MVC y carga de formularios por pasos.
+- Consumo de APIs para facultades, carreras y docentes.
+- Guardado y obtencion de informacion por formulario (SPs).
+
+Estado actual del desarrollo
+- Modulo funcional con flujo de autenticacion y formularios integrados.
+- Dependencias minimas via Composer.
+- Configuracion por variables de entorno.
+
+Consideraciones
+- No se incluyen scripts de base de datos en el repositorio.
+- Las URLs y endpoints externos deben configurarse en `.env`.
+- Se recomienda documentar endpoints internos de formularios y agregar
+  
